@@ -28,3 +28,10 @@ class Game(playerX, playerO)
   end
 end
 
+class Player(marker)
+  @marker = marker
+
+  def make_move
+  
+  end
+end
