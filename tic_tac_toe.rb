@@ -4,6 +4,7 @@ class Game(playerX, playerO)
   @playerO = playerO
 
   def new_game
+    game_state = [[],[],[]]
 
   end
 
