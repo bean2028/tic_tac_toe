@@ -25,7 +25,7 @@ class Game(playerX, playerO)
   end
 
   def draw_board
-  
+    puts game_state.map { |x| x.join(' ')}
   end
 end
 
