@@ -1,7 +1,9 @@
-class Game(playerX, playerO)
-  @game_state
-  @playerX = playerX
-  @playerO = playerO
+class Game
+  def initialize(playerX, playerO)
+    @game_state
+    @playerX = playerX
+    @playerO = playerO
+  end
 
   def new_game
     game_state = [[],[],[]]
