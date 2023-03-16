@@ -7,11 +7,9 @@ class Game
 
   def new_game
     game_state = [[],[],[]]
-
   end
 
   def check_for_winner
-  
   end
 
   def check_for_horizontal
@@ -31,10 +29,10 @@ class Game
   end
 end
 
-class Player(marker)
-  @marker = marker
-
-  def make_move
-  
-  end
-end
+# class Player
+#  def initialize(marker)
+#    @marker = marker
+#  end
+#  def make_move
+#  end
+# end
