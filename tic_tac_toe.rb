@@ -14,7 +14,7 @@ class Game
 
   # def check_for_winner
 
-  def check_for_horizontal
+  def check_for_horizontal?
     if @game_state[0][0] == @game_state[0][1] && @game_state[0][1] == @game_state[0][2]
       true
     elsif @game_state[1][0] == @game_state[1][1] && @game_state[1][1] == @game_state[1][2]
@@ -26,7 +26,7 @@ class Game
     end
   end
 
-  def check_for_vertical
+  def check_for_vertical?
     if @game_state[0][0] == @game_state[1][0] && @game_state[1][0] == @game_state[2][0]
       true
     elsif @game_state[0][1] == @game_state[1][1] && @game_state[1][1] == @game_state[2][1]
@@ -38,7 +38,7 @@ class Game
     end
   end
 
-  def check_for_diagonal
+  def check_for_diagonal?
     if @game_state[0][0] == @game_state[1][1] && @game_state[1][1] == @game_state[2][2]
       true
     elsif @game_state[0][2] == @game_state[1][1] && @game_state[1][1] == @game_state[2][0]
