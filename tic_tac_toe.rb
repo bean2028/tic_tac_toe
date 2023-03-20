@@ -53,9 +53,14 @@ class Game
   end
 end
 
-# class Player
-#  def initialize(marker)
-#    @marker = marker
-#  end
-#  def make_move
-# end#
+# Player of the tic-tac-toe game
+class Player
+  def initialize(game, marker)
+    @game = game
+    @marker = marker
+  end
+
+  def make_move(row, column)
+    game.game_state = [row][column]
+  end
+end
